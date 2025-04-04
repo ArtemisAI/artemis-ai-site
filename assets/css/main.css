@@ -56,17 +56,17 @@
     border-radius: 4px;
   }
   
-  .features {
+  .features, .services-list, .contact-form-section {
     padding: 2rem 1rem;
   }
   
-  .feature-grid {
+  .feature-grid, .services-list {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
   }
   
-  .feature-grid article {
+  .feature-grid article, .services-list article {
     flex: 1 1 200px;
     background: #fff;
     padding: 1rem;
