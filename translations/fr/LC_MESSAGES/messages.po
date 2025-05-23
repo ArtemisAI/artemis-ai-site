@@ -1,0 +1,566 @@
+# French translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-05-23 03:10+0000\n"
+"PO-Revision-Date: 2025-05-23 03:11+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/404.html:5
+msgid "Page Not Found - Artemis AI"
+msgstr ""
+
+#: templates/404.html:7
+msgid "404 Not Found - Artemis AI"
+msgstr ""
+
+#: templates/404.html:28
+msgid "Confused Robot"
+msgstr ""
+
+#: templates/404.html:29
+msgid "Oops! 404 - Page Not Found"
+msgstr ""
+
+#: templates/404.html:30
+msgid ""
+"It seems the page you're looking for has wandered off into the digital "
+"cosmos."
+msgstr ""
+
+#: templates/404.html:31
+msgid "Don't worry, even our AI gets lost sometimes! Let's get you back on track."
+msgstr ""
+
+#: templates/404.html:32
+msgid "Go to Homepage"
+msgstr ""
+
+#: templates/about.html:5 templates/about.html:15
+msgid "About Artemis AI"
+msgstr ""
+
+#: templates/about.html:7
+msgid "About - Artemis AI"
+msgstr ""
+
+#: templates/about.html:17
+msgid ""
+"Founded in 2025, Artemis AI is driven by a passion for innovation and "
+"technological excellence. We combine rigorous research with practical "
+"insights to deliver AI solutions that drive real-world impact."
+msgstr ""
+
+#: templates/about.html:20
+msgid ""
+"Our mission is to harness the power of artificial intelligence to solve "
+"complex challenges and create sustainable growth for businesses across "
+"industries—from healthcare to finance."
+msgstr ""
+
+#: templates/about.html:23
+msgid ""
+"Join us on our journey as we transform data into decisions and empower "
+"organizations to thrive in a digital age."
+msgstr ""
+
+#: templates/about.html:28
+msgid "Our Background"
+msgstr ""
+
+#: templates/about.html:29
+msgid ""
+"Artemis AI was founded with the vision to democratize access to cutting-"
+"edge AI technologies..."
+msgstr ""
+
+#: templates/about.html:33
+msgid "Our Values"
+msgstr ""
+
+#: templates/about.html:35
+msgid "Innovation"
+msgstr ""
+
+#: templates/about.html:36
+msgid "Integrity"
+msgstr ""
+
+#: templates/about.html:37
+msgid "Customer Focus"
+msgstr ""
+
+#: templates/about.html:38
+msgid "Collaboration"
+msgstr ""
+
+#: templates/about.html:43
+msgid "Meet the Team"
+msgstr ""
+
+#: templates/about.html:44
+msgid ""
+"Our team consists of passionate AI experts, data scientists, and "
+"engineers dedicated to your success. (Team bios and avatars will be added"
+" soon!)"
+msgstr ""
+
+#: templates/about.html:48
+msgid "The Story of Artemis AI"
+msgstr ""
+
+#: templates/about.html:49
+msgid ""
+"From a small startup to a growing force in AI solutions, our journey is "
+"one of passion and perseverance..."
+msgstr ""
+
+#: templates/about.html:53
+msgid "Our Vision for the Future"
+msgstr ""
+
+#: templates/about.html:54
+msgid ""
+"We aim to be at the forefront of AI innovation, empowering businesses of "
+"all sizes to achieve their full potential..."
+msgstr ""
+
+#: templates/blog.html:5
+msgid "Artemis AI - Blog & Updates"
+msgstr ""
+
+#: templates/blog.html:7
+msgid "Blog & Updates - Artemis AI"
+msgstr ""
+
+#: templates/blog.html:14
+msgid "Artemis AI Blog & Updates"
+msgstr ""
+
+#: templates/blog.html:15
+msgid "News, insights, and articles on AI. (Content coming soon!)"
+msgstr ""
+
+#: templates/blog.html:19 templates/demos.html:19
+msgid "Under Construction"
+msgstr ""
+
+#: templates/blog.html:20
+msgid ""
+"Our blog is launching soon! Stay tuned for insightful articles, company "
+"news, AI tips, and client success stories."
+msgstr ""
+
+#: templates/blog.html:24
+msgid "Latest Posts"
+msgstr ""
+
+#: templates/blog.html:25
+msgid "No posts yet. Check back soon!"
+msgstr ""
+
+#: templates/blog.html:28
+msgid "Blog Post Title 1"
+msgstr ""
+
+#: templates/blog.html:29
+msgid "A brief excerpt of the blog post..."
+msgstr ""
+
+#: templates/blog.html:30
+msgid "Posted on: YYYY-MM-DD"
+msgstr ""
+
+#: templates/contact.html:5
+msgid "Contact Artemis AI for innovative AI solutions and expert consultation."
+msgstr ""
+
+#: templates/contact.html:7
+msgid "Contact - Artemis AI"
+msgstr ""
+
+#: templates/contact.html:15 templates/index.html:20
+msgid "Contact Us"
+msgstr ""
+
+#: templates/contact.html:16
+msgid ""
+"If you have any questions or need further information, please fill out "
+"the form below."
+msgstr ""
+
+#: templates/contact.html:18
+msgid "Your Name:"
+msgstr ""
+
+#: templates/contact.html:21
+msgid "Your Email:"
+msgstr ""
+
+#: templates/contact.html:24
+msgid "Your Message:"
+msgstr ""
+
+#: templates/contact.html:27
+msgid "Send Message"
+msgstr ""
+
+#: templates/contact.html:30
+msgid "Our Contact Details"
+msgstr ""
+
+#: templates/contact.html:31
+msgid "Email: info@artemis-ai.ca"
+msgstr ""
+
+#: templates/contact.html:32
+msgid "Phone: +1 555-0101"
+msgstr ""
+
+#: templates/contact.html:33
+msgid "Address: 123 Artemis Lane, Innovation City, CA"
+msgstr ""
+
+#: templates/contact.html:36
+msgid "Connect With Us"
+msgstr ""
+
+#: templates/contact.html:38 templates/includes/footer.html:5
+msgid "Twitter"
+msgstr ""
+
+#: templates/contact.html:39 templates/includes/footer.html:6
+msgid "LinkedIn"
+msgstr ""
+
+#: templates/contact.html:40
+msgid "GitHub"
+msgstr ""
+
+#: templates/demos.html:5
+msgid "Artemis AI - Demo Use Cases"
+msgstr ""
+
+#: templates/demos.html:7
+msgid "Demos & Use Cases - Artemis AI"
+msgstr ""
+
+#: templates/demos.html:14
+msgid "Interactive Demos & Use Cases"
+msgstr ""
+
+#: templates/demos.html:15
+msgid "See Artemis AI in action. (Full demos coming soon!)"
+msgstr ""
+
+#: templates/demos.html:20
+msgid ""
+"This page is currently under development. We are working hard to bring "
+"you interactive examples of our AI solutions!"
+msgstr ""
+
+#: templates/demos.html:21
+msgid "Soon you'll be able to try live demos of:"
+msgstr ""
+
+#: templates/demos.html:23 templates/demos.html:33
+msgid "Automated Email Assistant"
+msgstr ""
+
+#: templates/demos.html:24
+msgid "Lead Generation Bot"
+msgstr ""
+
+#: templates/demos.html:25
+msgid "Workflow Optimization Tools"
+msgstr ""
+
+#: templates/demos.html:30
+msgid "Planned Demonstrations"
+msgstr ""
+
+#: templates/demos.html:34
+msgid ""
+"An AI assistant that helps manage and draft emails efficiently. (Demo "
+"coming soon)"
+msgstr ""
+
+#: templates/demos.html:37
+msgid "Intelligent Lead Generation"
+msgstr ""
+
+#: templates/demos.html:38
+msgid ""
+"Discover how AI can identify and qualify leads for your business. (Demo "
+"coming soon)"
+msgstr ""
+
+#: templates/demos.html:41
+msgid "Workflow Optimization"
+msgstr ""
+
+#: templates/demos.html:42
+msgid "See AI streamline complex business processes. (Demo coming soon)"
+msgstr ""
+
+#: templates/index.html:5
+msgid "Artemis AI - Advanced AI solutions for businesses and innovators."
+msgstr ""
+
+#: templates/index.html:7
+msgid "Artemis AI - Home"
+msgstr ""
+
+#: templates/index.html:15
+msgid "Welcome to Artemis AI"
+msgstr ""
+
+#: templates/index.html:17
+msgid ""
+"Small solutions for big companies. Big solutions for small companies. "
+"Empowering entrepreneurship, innovation, and operational "
+"efficiency—beyond expectations—with Artemis AI."
+msgstr ""
+
+#: templates/index.html:21
+msgid "Schedule a Demo"
+msgstr ""
+
+#: templates/index.html:22
+msgid "Talk to our AI"
+msgstr ""
+
+#: templates/index.html:27
+msgid "Why Choose Artemis AI?"
+msgstr ""
+
+#: templates/index.html:30
+msgid "Cutting-Edge Research"
+msgstr ""
+
+#: templates/index.html:32
+msgid ""
+"Our team is constantly pushing the boundaries of artificial intelligence "
+"to deliver innovations that drive progress."
+msgstr ""
+
+#: templates/index.html:36
+msgid "Scalable Solutions"
+msgstr ""
+
+#: templates/index.html:38
+msgid ""
+"From nimble startups to established enterprises, our solutions are "
+"designed to scale with your business."
+msgstr ""
+
+#: templates/index.html:42
+msgid "Expert Guidance"
+msgstr ""
+
+#: templates/index.html:44
+msgid ""
+"Benefit from the expertise of our data scientists and engineers who "
+"ensure you get the most out of your AI investments."
+msgstr ""
+
+#: templates/login.html:5 templates/login.html:7
+msgid "Login - Artemis AI"
+msgstr ""
+
+#: templates/login.html:14
+msgid "User Login"
+msgstr ""
+
+#: templates/login.html:18
+msgid "Feature Under Construction"
+msgstr ""
+
+#: templates/login.html:19
+msgid ""
+"User account registration and login functionality are currently in "
+"development and will be available soon. Thank you for your patience!"
+msgstr ""
+
+#: templates/login.html:23
+msgid "Username or Email:"
+msgstr ""
+
+#: templates/login.html:26
+msgid "Password:"
+msgstr ""
+
+#: templates/login.html:29
+msgid "Log In"
+msgstr ""
+
+#: templates/login.html:31
+msgid "Forgot your password?"
+msgstr ""
+
+#: templates/services.html:5
+msgid ""
+"Our AI Services - Cutting-edge, scalable, and tailored for your business "
+"needs."
+msgstr ""
+
+#: templates/services.html:7
+msgid "Our Services - Artemis AI"
+msgstr ""
+
+#: templates/services.html:15
+msgid "Our AI Services"
+msgstr ""
+
+#: templates/services.html:16
+msgid "Discover how our innovative solutions can transform your business."
+msgstr ""
+
+#: templates/services.html:21
+msgid "Note:"
+msgstr ""
+
+#: templates/services.html:21
+msgid ""
+"We are continuously updating our portfolio. Detailed case studies and "
+"interactive demos for these services will be available soon!"
+msgstr ""
+
+#: templates/services.html:27
+msgid "Custom AI Chatbots"
+msgstr ""
+
+#: templates/services.html:28
+msgid ""
+"Develop intelligent, conversational AI chatbots tailored to your business"
+" needs for customer service, lead generation, and internal support. Our "
+"chatbots are designed to integrate seamlessly with your existing "
+"platforms and provide a natural, engaging user experience."
+msgstr ""
+
+#: templates/services.html:31
+msgid "Automation Workflows"
+msgstr ""
+
+#: templates/services.html:32
+msgid ""
+"Streamline your operations and improve efficiency with our AI-powered "
+"automation solutions for repetitive tasks, data entry, and complex "
+"processes. We help you identify automation opportunities and implement "
+"robust workflows that save time and reduce errors."
+msgstr ""
+
+#: templates/services.html:35
+msgid "Data Analysis & Visualization"
+msgstr ""
+
+#: templates/services.html:36
+msgid ""
+"Unlock valuable insights from your data. We provide advanced data "
+"analysis services and create intuitive visualizations to help you make "
+"informed decisions. Our experts use cutting-edge techniques to reveal "
+"patterns and trends that drive business growth."
+msgstr ""
+
+#: templates/services.html:39
+msgid "Business Intelligence"
+msgstr ""
+
+#: templates/services.html:40
+msgid ""
+"Transform raw data into actionable intelligence. Our BI solutions enable "
+"you to monitor key metrics, identify trends, and gain a competitive edge."
+" We deliver comprehensive dashboards and reports that provide a clear "
+"view of your business performance."
+msgstr ""
+
+#: templates/services.html:43
+msgid "AI Consulting"
+msgstr ""
+
+#: templates/services.html:44
+msgid ""
+"Navigate the complexities of AI adoption with our expert consulting "
+"services. We provide strategic guidance, roadmap development, and "
+"implementation support to ensure your AI initiatives align with your "
+"business goals and deliver measurable results."
+msgstr ""
+
+#: templates/includes/footer.html:2
+msgid "&copy; 2025 Artemis AI. All rights reserved."
+msgstr ""
+
+#: templates/includes/footer.html:4
+msgid "Follow us on"
+msgstr ""
+
+#: templates/includes/footer.html:5
+msgid "and"
+msgstr ""
+
+#: templates/includes/footer.html:12
+msgid ""
+"Hello! I'm Artemis, your AI assistant. How can I help you with your AI "
+"project needs today?"
+msgstr ""
+
+#: templates/includes/header.html:4
+msgid "Artemis AI Logo"
+msgstr ""
+
+#: templates/includes/header.html:8
+msgid "Home"
+msgstr ""
+
+#: templates/includes/header.html:9
+msgid "AI Services"
+msgstr ""
+
+#: templates/includes/header.html:10
+msgid "Chat"
+msgstr ""
+
+#: templates/includes/header.html:11
+msgid "Media"
+msgstr ""
+
+#: templates/includes/header.html:12
+msgid "About Us"
+msgstr ""
+
+#: templates/includes/header.html:13
+msgid "Our Services"
+msgstr ""
+
+#: templates/includes/header.html:14
+msgid "Demos"
+msgstr ""
+
+#: templates/includes/header.html:15
+msgid "Blog"
+msgstr ""
+
+#: templates/includes/header.html:16
+msgid "Contact"
+msgstr ""
+
+#: templates/includes/header.html:17
+msgid "Login"
+msgstr ""
+
+#: templates/includes/header.html:21
+msgid "Language"
+msgstr ""
+

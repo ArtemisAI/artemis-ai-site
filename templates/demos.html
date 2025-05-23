@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('Artemis AI - Demo Use Cases') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('Demos & Use Cases - Artemis AI') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+  {% include 'includes/header.html' %}
+  <main>
+    <section class="hero">
+      <h1>{{ _('Interactive Demos & Use Cases') }}</h1>
+      <p>{{ _('See Artemis AI in action. (Full demos coming soon!)') }}</p>
+    </section>
+    <section style="padding: 2rem 1rem; text-align: center;">
+      <div style="background: #fffce4; padding: 2rem; border: 1px dashed #ffc107; margin-bottom: 2rem;">
+        <h2>🚧 {{ _('Under Construction') }} 🚧</h2>
+        <p>{{ _('This page is currently under development. We are working hard to bring you interactive examples of our AI solutions!') }}</p>
+        <p>{{ _("Soon you'll be able to try live demos of:") }}</p>
+        <ul>
+          <li>{{ _('Automated Email Assistant') }}</li>
+          <li>{{ _('Lead Generation Bot') }}</li>
+          <li>{{ _('Workflow Optimization Tools') }}</li>
+        </ul>
+      </div>
+    </section>
+    <section class="demo-placeholders" style="padding: 2rem 1rem;">
+      <h2>{{ _('Planned Demonstrations') }}</h2>
+      <div class="feature-grid"> <!-- Re-using feature-grid for layout -->
+        <article>
+          <h3>{{ _('Automated Email Assistant') }}</h3>
+          <p>{{ _('An AI assistant that helps manage and draft emails efficiently. (Demo coming soon)') }}</p>
+        </article>
+        <article>
+          <h3>{{ _('Intelligent Lead Generation') }}</h3>
+          <p>{{ _('Discover how AI can identify and qualify leads for your business. (Demo coming soon)') }}</p>
+        </article>
+        <article>
+          <h3>{{ _('Workflow Optimization') }}</h3>
+          <p>{{ _('See AI streamline complex business processes. (Demo coming soon)') }}</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  {% include 'includes/footer.html' %}
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+</html>

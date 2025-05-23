@@ -1,11 +1,6 @@
-# Use the official Nginx image (Alpine is lightweight)
-FROM nginx:alpine
-
-# Remove default content and copy our static site
-RUN rm -rf /usr/share/nginx/html/*
-COPY . /usr/share/nginx/html
-
-# Expose port 80 (container's internal port)
-EXPOSE 80
-
-# Nginx is already set to run in the foreground by default
+FROM python:3.9-slim
+WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('Our AI Services - Cutting-edge, scalable, and tailored for your business needs.') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('Our Services - Artemis AI') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+  {% include 'includes/header.html' %}
+
+  <main>
+    <section class="hero">
+      <h1>{{ _('Our AI Services') }}</h1>
+      <p>{{ _('Discover how our innovative solutions can transform your business.') }}</p>
+    </section>
+
+    <section style="padding: 1rem 1rem; text-align: center;">
+      <div style="background: #fffce4; padding: 1rem; border: 1px dashed #ffc107; margin-bottom: 1rem;">
+        <p><strong>{{ _('Note:') }}</strong> {{ _('We are continuously updating our portfolio. Detailed case studies and interactive demos for these services will be available soon!') }}</p>
+      </div>
+    </section>
+
+    <section class="services-list">
+      <article class="service-item">
+        <h3>{{ _('Custom AI Chatbots') }}</h3>
+        <p>{{ _('Develop intelligent, conversational AI chatbots tailored to your business needs for customer service, lead generation, and internal support. Our chatbots are designed to integrate seamlessly with your existing platforms and provide a natural, engaging user experience.') }}</p>
+      </article>
+      <article class="service-item">
+        <h3>{{ _('Automation Workflows') }}</h3>
+        <p>{{ _('Streamline your operations and improve efficiency with our AI-powered automation solutions for repetitive tasks, data entry, and complex processes. We help you identify automation opportunities and implement robust workflows that save time and reduce errors.') }}</p>
+      </article>
+      <article class="service-item">
+        <h3>{{ _('Data Analysis & Visualization') }}</h3>
+        <p>{{ _('Unlock valuable insights from your data. We provide advanced data analysis services and create intuitive visualizations to help you make informed decisions. Our experts use cutting-edge techniques to reveal patterns and trends that drive business growth.') }}</p>
+      </article>
+      <article class="service-item">
+        <h3>{{ _('Business Intelligence') }}</h3>
+        <p>{{ _('Transform raw data into actionable intelligence. Our BI solutions enable you to monitor key metrics, identify trends, and gain a competitive edge. We deliver comprehensive dashboards and reports that provide a clear view of your business performance.') }}</p>
+      </article>
+      <article class="service-item">
+        <h3>{{ _('AI Consulting') }}</h3>
+        <p>{{ _('Navigate the complexities of AI adoption with our expert consulting services. We provide strategic guidance, roadmap development, and implementation support to ensure your AI initiatives align with your business goals and deliver measurable results.') }}</p>
+      </article>
+    </section>
+  </main>
+
+  {% include 'includes/footer.html' %}
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+</html>

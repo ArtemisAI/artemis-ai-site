@@ -1,0 +1,27 @@
+<header>
+  <nav>
+    <div class="logo">
+      <img src="{{ url_for('static', filename='assets/images/artemis-logo.png') }}" alt="{{ _('Artemis AI Logo') }}" />
+      <span>Artemis AI</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">{{ _('Home') }}</a></li>
+      <li><a href="https://ai.artemis-ai.ca">{{ _('AI Services') }}</a></li>
+      <li><a href="https://chat.artemis-ai.ca">{{ _('Chat') }}</a></li>
+      <li><a href="https://media.artemis-ai.ca">{{ _('Media') }}</a></li>
+      <li><a href="{{ url_for('about') }}">{{ _('About Us') }}</a></li>
+      <li><a href="{{ url_for('services') }}">{{ _('Our Services') }}</a></li>
+      <li><a href="{{ url_for('demos') }}">{{ _('Demos') }}</a></li>
+      <li><a href="{{ url_for('blog') }}">{{ _('Blog') }}</a></li>
+      <li><a href="{{ url_for('contact') }}">{{ _('Contact') }}</a></li>
+      <li><a href="{{ url_for('login') }}">{{ _('Login') }}</a></li>
+    </ul>
+  </nav>
+  <div class="language-switcher" style="padding: 0.5rem 2rem; text-align: right; background-color: #f8f9fa;">
+    <span>{{ _('Language') }}:</span>
+    {% for lang_code, lang_name in LANGUAGES.items() %}
+      <a href="?lang={{ lang_code }}" {% if CURRENT_LANG == lang_code %}class="active-lang" style="font-weight: bold;"{% endif %}>{{ lang_name }}</a>
+      {% if not loop.last %} | {% endif %}
+    {% endfor %}
+  </div>
+</header>

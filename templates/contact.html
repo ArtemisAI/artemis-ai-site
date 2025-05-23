@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('Contact Artemis AI for innovative AI solutions and expert consultation.') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('Contact - Artemis AI') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+  {% include 'includes/header.html' %}
+  
+  <main>
+    <section class="contact-form-section">
+      <h1>{{ _('Contact Us') }}</h1>
+      <p>{{ _('If you have any questions or need further information, please fill out the form below.') }}</p>
+      <form action="#" method="post">
+        <label for="name">{{ _('Your Name:') }}</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="email">{{ _('Your Email:') }}</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="message">{{ _('Your Message:') }}</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">{{ _('Send Message') }}</button>
+      </form>
+      <section class="contact-details">
+        <h2>{{ _('Our Contact Details') }}</h2>
+        <p>{{ _('Email: info@artemis-ai.ca') }}</p>
+        <p>{{ _('Phone: +1 555-0101') }}</p>
+        <p>{{ _('Address: 123 Artemis Lane, Innovation City, CA') }}</p>
+      </section>
+      <section class="social-media-links">
+        <h2>{{ _('Connect With Us') }}</h2>
+        <div class="social-links">
+          <a href="#" aria-label="{{ _('Twitter') }}"><img src="{{ url_for('static', filename='assets/images/twitter_icon.svg') }}" alt="{{ _('Twitter') }}" width="24" height="24"></a>
+          <a href="#" aria-label="{{ _('LinkedIn') }}"><img src="{{ url_for('static', filename='assets/images/linkedin_icon.svg') }}" alt="{{ _('LinkedIn') }}" width="24" height="24"></a>
+          <a href="#" aria-label="{{ _('GitHub') }}"><img src="{{ url_for('static', filename='assets/images/github_icon.svg') }}" alt="{{ _('GitHub') }}" width="24" height="24"></a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  {% include 'includes/footer.html' %}
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Clean, modern sans-serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6; /* Light gray background for a clean look */
+  color: #333; /* Default text color */
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #ffffff; /* White background for header */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Adjust as needed */
+  vertical-align: middle;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  color: #2c3e50; /* Darker color for logo text */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3498db; /* Blue for links, can be adjusted */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #2980b9; /* Darker blue on hover */
+}
+
+/* Main Content Area */
+main {
+  padding: 2rem;
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto; /* Center content */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #eaf2f8; /* Light blue for hero section */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  color: #2c3e50; /* Dark blue for hero heading */
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Call to Action Buttons */
+.cta-button, button[type="submit"] { /* Apply to form submit buttons too */
+  background-color: #3498db; /* Primary button color */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0.5rem;
+  border: none; /* Remove default border for button elements */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, button[type="submit"]:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+.cta-buttons {
+  margin-top: 1rem;
+}
+
+/* Features and Services Sections */
+.features, .services-list, .contact-form-section section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.feature-grid, .services-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+  gap: 1.5rem; /* Space between items */
+  justify-content: space-around;
+}
+
+.feature-grid article, .service-item {
+  background-color: #f9f9f9; /* Slightly off-white for cards */
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  flex-basis: calc(33.333% - 2rem); /* Adjust for 3 items per row, considering gap */
+  box-sizing: border-box;
+}
+
+.feature-grid article h3, .service-item h3 {
+  color: #3498db;
+  margin-top: 0;
+}
+
+/* Contact Form */
+.contact-form-section form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form-section form input[type="text"],
+.contact-form-section form input[type="email"],
+.contact-form-section form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form-section form textarea {
+  min-height: 120px;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 1rem;
+    text-align: center; /* Center icons if they are in their own section */
+}
+
+.social-links img {
+    margin: 0 0.5rem;
+    /* Add transition for hover effect if desired */
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #34495e; /* Darker footer background */
+  color: #ecf0f1; /* Light text color for footer */
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #3498db; /* Link color in footer */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 992px) {
+  .feature-grid article, .service-item {
+    flex-basis: calc(50% - 2rem); /* 2 items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start; /* Align to left on mobile */
+    width: 100%; /* Full width for nav links container */
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-top: 0.5rem; /* Space between stacked nav links */
+    width: 100%; /* Full width list items */
+  }
+  
+  .nav-links a {
+    display: block; /* Make links take full width for easier tapping */
+    padding: 0.5rem 0; /* Add some padding */
+  }
+
+  .feature-grid, .services-list {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .feature-grid article, .service-item {
+    flex-basis: 100%; /* Full width for stacked items */
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta-button {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+    .logo span {
+        font-size: 1.2rem; /* Smaller logo text on very small screens */
+    }
+    .hero h1 {
+        font-size: 1.8rem; /* Smaller hero heading */
+    }
+}

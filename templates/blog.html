@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('Artemis AI - Blog & Updates') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('Blog & Updates - Artemis AI') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+  {% include 'includes/header.html' %}
+  <main>
+    <section class="hero">
+      <h1>{{ _('Artemis AI Blog & Updates') }}</h1>
+      <p>{{ _('News, insights, and articles on AI. (Content coming soon!)') }}</p>
+    </section>
+    <section style="padding: 2rem 1rem; text-align: center;">
+      <div style="background: #fffce4; padding: 2rem; border: 1px dashed #ffc107; margin-bottom: 2rem;">
+        <h2>🚧 {{ _('Under Construction') }} 🚧</h2>
+        <p>{{ _('Our blog is launching soon! Stay tuned for insightful articles, company news, AI tips, and client success stories.') }}</p>
+      </div>
+    </section>
+    <section class="blog-placeholders" style="padding: 2rem 1rem;">
+      <h2>{{ _('Latest Posts') }}</h2>
+      <p style="text-align:center;">{{ _('No posts yet. Check back soon!') }}</p>
+      <!-- Example of how a post list might look later:
+      <article>
+        <h3><a href="#">{{ _('Blog Post Title 1') }}</a></h3>
+        <p>{{ _('A brief excerpt of the blog post...') }}</p>
+        <em>{{ _('Posted on: YYYY-MM-DD') }}</em>
+      </article>
+      -->
+    </section>
+  </main>
+  {% include 'includes/footer.html' %}
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+</html>
