@@ -1,1 +1,55 @@
-# Docker Compose
+version: "3.9"
+
+# ----------------------------------------------------------------------------
+#  Artemis-AI – unified development stack
+# ----------------------------------------------------------------------------
+#  Services (default profile):
+#    • web      – Django + Gunicorn
+#    • db       – PostgreSQL 15
+#    • redis    – Redis 7 (for Celery & Django channels)
+#    • ollama   – Local LLM server, proxied by web
+#    • nginx    – Front proxy / static assets / TLS termination
+#
+#  Developers:  `docker compose up --build`  (see README).
+#  CI / Prod:   Add override files as needed.
+# ----------------------------------------------------------------------------
+
+services:
+  web:
+    build: ./backend
+    command: gunicorn artemis.wsgi:application -c gunicorn.conf.py
+    env_file: .env
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+      - redis
+      - ollama
+
+  db:
+    image: postgres:15-alpine
+    env_file: .env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+
+  ollama:
+    # note: replace with the official image name / tag once published
+    image: ollama/ollama:latest
+    volumes:
+      - ollama-data:/root/.ollama
+
+  nginx:
+    image: nginx:1.25-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./ops/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - web
+
+volumes:
+  pgdata:
+  ollama-data:
