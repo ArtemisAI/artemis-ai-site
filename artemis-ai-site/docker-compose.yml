@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  artemis-website:
+    build: .
+    container_name: artemis-website
+    ports:
+      - "8080:80" 
+    restart: unless-stopped
