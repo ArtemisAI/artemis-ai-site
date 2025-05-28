@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('Page Not Found - Artemis AI') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('404 Not Found - Artemis AI') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+  <style>
+    .error-main {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .error-main h1 {
+      font-size: 3rem;
+      color: #ff6b6b; /* A distinct error color */
+    }
+    .error-main img {
+       max-width: 200px; /* Or a suitable size */
+       margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  {% include 'includes/header.html' %}
+  <main class="error-main">
+    <!-- You can add a relevant or humorous image here -->
+    <!-- <img src="{{ url_for('static', filename='assets/images/404-graphic.png') }}" alt="{{ _('Confused Robot') }}"> -->
+    <h1>{{ _('Oops! 404 - Page Not Found') }}</h1>
+    <p>{{ _("It seems the page you're looking for has wandered off into the digital cosmos.") }}</p>
+    <p>{{ _("Don't worry, even our AI gets lost sometimes! Let's get you back on track.") }}</p>
+    <a href="{{ url_for('home') }}" class="cta-button">{{ _('Go to Homepage') }}</a>
+  </main>
+  {% include 'includes/footer.html' %}
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+</html>

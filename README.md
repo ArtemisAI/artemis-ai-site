@@ -1,19 +1,45 @@
-# Artemis-AI – Monorepo
+# Artemis AI Website
 
-This repository combines all Artemis-AI assets (marketing site, AI chatbot
-backend, demo SaaS templates) into a single, maintainable code-base.
+This is a multilingual Flask-based website for Artemis AI.
 
-* `/frontend` – Next.js + Chakra-UI marketing website (multilingual)
-* `/backend`  – Django 5 API, admin & WebSocket chat service
-* `/ops`      – Docker-Compose, Nginx, deployment scripts
-* `/design`   – Legacy Bootstrap/Pug sources (style-guide only)
+Requirements
 
-Dev quick-start:
+- Docker & Docker Compose
+
+Quick Start
 
 ```bash
-cp .env.template .env   # provide secrets & configs
 docker compose up --build
-# open http://localhost
 ```
 
-Detailed architecture & roadmap in **docs/ARCHITECTURE.md**.
+Then visit http://localhost:5000
+
+Project Structure
+
+- app.py: Flask application entry point
+- static/: CSS, JavaScript, and image assets
+- templates/: Jinja2 HTML templates
+- translations/: Localization files for supported languages
+
+Development
+
+```bash
+pip install -r requirements.txt
+flask run
+```
+
+Internationalization (i18n)
+
+```bash
+# Extract messages
+pybabel extract -F babel.cfg -o messages.pot .
+
+# Initialize a new language (e.g., Spanish)
+pybabel init -i messages.pot -d translations -l es
+
+# Update translations in translations/<lang>/LC_MESSAGES/messages.po
+
+# Compile translations
+pybabel compile -d translations
+```
+

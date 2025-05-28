@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('About Artemis AI') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('About - Artemis AI') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+  {% include 'includes/header.html' %}
+
+  <main>
+    <section>
+      <h1>{{ _('About Artemis AI') }}</h1>
+      <p>
+        {{ _('Founded in 2025, Artemis AI is driven by a passion for innovation and technological excellence. We combine rigorous research with practical insights to deliver AI solutions that drive real-world impact.') }}
+      </p>
+      <p>
+        {{ _('Our mission is to harness the power of artificial intelligence to solve complex challenges and create sustainable growth for businesses across industries—from healthcare to finance.') }}
+      </p>
+      <p>
+        {{ _('Join us on our journey as we transform data into decisions and empower organizations to thrive in a digital age.') }}
+      </p>
+    </section>
+
+    <section id="background">
+      <h2>{{ _('Our Background') }}</h2>
+      <p>{{ _('Artemis AI was founded with the vision to democratize access to cutting-edge AI technologies...') }}</p>
+    </section>
+
+    <section id="values">
+      <h2>{{ _('Our Values') }}</h2>
+      <ul>
+        <li>{{ _('Innovation') }}</li>
+        <li>{{ _('Integrity') }}</li>
+        <li>{{ _('Customer Focus') }}</li>
+        <li>{{ _('Collaboration') }}</li>
+      </ul>
+    </section>
+
+    <section id="team">
+      <h2>{{ _('Meet the Team') }}</h2>
+      <p>{{ _('Our team consists of passionate AI experts, data scientists, and engineers dedicated to your success. (Team bios and avatars will be added soon!)') }}</p>
+    </section>
+
+    <section id="story">
+      <h2>{{ _('The Story of Artemis AI') }}</h2>
+      <p>{{ _('From a small startup to a growing force in AI solutions, our journey is one of passion and perseverance...') }}</p>
+    </section>
+
+    <section id="vision">
+      <h2>{{ _('Our Vision for the Future') }}</h2>
+      <p>{{ _('We aim to be at the forefront of AI innovation, empowering businesses of all sizes to achieve their full potential...') }}</p>
+    </section>
+  </main>
+
+  {% include 'includes/footer.html' %}
+</body>
+</html>

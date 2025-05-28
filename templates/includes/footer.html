@@ -1,0 +1,28 @@
+<footer>
+  <p>{{ _('&copy; 2025 Artemis AI. All rights reserved.') }}</p>
+  <p>
+    {{ _('Follow us on') }} 
+    <a href="https://twitter.com/ArtemisAI" target="_blank">{{ _('Twitter') }}</a> {{ _('and') }} 
+    <a href="https://www.linkedin.com/company/artemisai/" target="_blank">{{ _('LinkedIn') }}</a>.
+  </p>
+</footer>
+
+<deep-chat
+  style="position: fixed; bottom: 20px; right: 20px; width: 300px; height: 400px; border-radius: 10px;"
+  introMessage="{{ _("Hello! I'm Artemis, your AI assistant. How can I help you with your AI project needs today?") }}"
+  theme="light"
+  avatar='{
+    "user": {"src": "https://cdn.jsdelivr.net/npm/deep-chat/assets/avatars/user.svg"},
+    "ai": {"src": "{{ url_for('static', filename='assets/images/artemis-logo.png') }}"}
+  }'
+  request='{
+    "url": "/chat", 
+    "method": "POST"
+  }'
+  requestBody='{
+     "message": "[[BODY.message]]",
+     "sessionId": "defaultSessionId" 
+  }'
+  >
+</deep-chat>
+<script type="module" src="https://cdn.jsdelivr.net/npm/deep-chat/dist/deepChat.bundle.js"></script>

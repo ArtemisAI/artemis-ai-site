@@ -1,13 +1,6 @@
-FROM node:20-alpine AS builder
+FROM python:3.9-slim
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 COPY . .
-RUN npm run build
-
-FROM node:20-alpine as runner
-WORKDIR /app
-ENV NODE_ENV=production
-COPY --from=builder /app ./
-EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["python", "app.py"]

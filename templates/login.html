@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('Login - Artemis AI') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('Login - Artemis AI') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+  {% include 'includes/header.html' %}
+  <main>
+    <section class="hero">
+      <h1>{{ _('User Login') }}</h1>
+    </section>
+    <section style="padding: 2rem 1rem; text-align: center;">
+      <div style="background: #fffce4; padding: 2rem; border: 1px dashed #ffc107; margin-bottom: 2rem; max-width: 600px; margin-left:auto; margin-right:auto;">
+        <h2>🚧 {{ _('Feature Under Construction') }} 🚧</h2>
+        <p>{{ _('User account registration and login functionality are currently in development and will be available soon. Thank you for your patience!') }}</p>
+      </div>
+      <!-- Existing login form is now disabled -->
+      <form action="#" method="post" style="opacity: 0.5; pointer-events: none;">
+        <label for="username">{{ _('Username or Email:') }}</label>
+        <input type="text" id="username" name="username" required disabled />
+
+        <label for="password">{{ _('Password:') }}</label>
+        <input type="password" id="password" name="password" required disabled />
+
+        <button type="submit" disabled>{{ _('Log In') }}</button>
+      </form>
+      <p style="opacity: 0.5; pointer-events: none;"><a href="#">{{ _('Forgot your password?') }}</a></p>
+    </section>
+  </main>
+  {% include 'includes/footer.html' %}
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+</html>

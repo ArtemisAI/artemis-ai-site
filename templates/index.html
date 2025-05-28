@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="{{ _('Artemis AI - Advanced AI solutions for businesses and innovators.') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ _('Artemis AI - Home') }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+  {% include 'includes/header.html' %}
+
+  <main>
+    <section class="hero">
+      <h1>{{ _('Welcome to Artemis AI') }}</h1>
+      <p>
+        {{ _('Small solutions for big companies. Big solutions for small companies. Empowering entrepreneurship, innovation, and operational efficiency—beyond expectations—with Artemis AI.') }}
+      </p>
+      <div class="cta-buttons">
+        <a class="cta-button" href="{{ url_for('contact') }}">{{ _('Contact Us') }}</a>
+        <a class="cta-button" href="{{ url_for('contact') }}">{{ _('Schedule a Demo') }}</a> 
+        <a class="cta-button" href="#talk-to-ai">{{ _('Talk to our AI') }}</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>{{ _('Why Choose Artemis AI?') }}</h2>
+      <div class="feature-grid">
+        <article>
+          <h3>{{ _('Cutting-Edge Research') }}</h3>
+          <p>
+            {{ _('Our team is constantly pushing the boundaries of artificial intelligence to deliver innovations that drive progress.') }}
+          </p>
+        </article>
+        <article>
+          <h3>{{ _('Scalable Solutions') }}</h3>
+          <p>
+            {{ _('From nimble startups to established enterprises, our solutions are designed to scale with your business.') }}
+          </p>
+        </article>
+        <article>
+          <h3>{{ _('Expert Guidance') }}</h3>
+          <p>
+            {{ _('Benefit from the expertise of our data scientists and engineers who ensure you get the most out of your AI investments.') }}
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  {% include 'includes/footer.html' %}
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+</html>
