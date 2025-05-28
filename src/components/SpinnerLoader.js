@@ -1,1 +1,0 @@
-// Spinner loader component

@@ -1,1 +1,0 @@
-// Animated section component

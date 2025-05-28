@@ -1,1 +1,0 @@
-{"name":"artemisai","version":"1.0.0","dependencies":{"@chakra-ui/react":"^3.16.0","@emotion/react":"^11.14.0","@emotion/styled":"^11.14.0","framer-motion":"^12.7.3","gray-matter":"^4.0.3","i18next":"^25.0.0","i18next-http-backend":"^3.0.2","next-translate":"^2.6.2","react-i18next":"^15.4.1","remark":"^15.0.1","remark-html":"^16.0.1"}}
