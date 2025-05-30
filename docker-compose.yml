@@ -1,10 +1,10 @@
 version: '3.8'
 services:
   web:
-    build: .
+    build: ./backend
     ports:
       - "5000:5000"
     volumes:
-      - .:/app
+      - ./backend:/app
     container_name: artemis-flask-app # Optional: custom container name
     restart: unless-stopped # Optional: restart policy
